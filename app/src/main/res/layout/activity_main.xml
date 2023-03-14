@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_pale"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/blackdiamond" />
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="450dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/logoImage"
+        android:layout_marginTop="15dp"
+        android:autofillHints="emailAddress"
+        android:hint="Enter email..."
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/passText"
+        android:layout_width="450dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/emailText"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:autofillHints="password"
+        android:hint="Enter password..."
+        android:inputType="text" />
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passText"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/teal_dark"
+            android:text="Submit" />
+
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/submitButton"
+            android:backgroundTint="@color/teal_dark"
+            android:text="Edit" />
+    </LinearLayout>
+
+
+</RelativeLayout>
